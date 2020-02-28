@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <span>
-        Ahoy Sailor o/{' '}
+        Ahoy Sailor o/
         <span role='img' aria-label='boat'>
           ⛵
         </span>
