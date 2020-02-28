@@ -1,14 +1,13 @@
 import React from 'react';
 
+import './styles/App.scss';
+
+import { Header } from './components';
+
 const App = () => {
   return (
     <div>
-      <span>
-        Ahoy Sailor o/
-        <span role='img' aria-label='boat'>
-          ⛵
-        </span>
-      </span>
+      <Header />
     </div>
   );
 };
