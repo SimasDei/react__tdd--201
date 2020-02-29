@@ -39,5 +39,10 @@ describe('Headline Component', () => {
     beforeEach(() => {
       wrapper = setup();
     });
+
+    it('Should not render', () => {
+      const component = findByDataTest(wrapper, 'HeadlineComponent');
+      expect(component.length).toBe(0);
+    });
   });
 });

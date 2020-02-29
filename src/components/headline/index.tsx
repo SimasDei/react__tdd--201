@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { Component } from 'react';
 
 import './headline.styles.scss';
@@ -10,6 +9,7 @@ interface IProps {
 
 export class Headline extends Component {
   render() {
+    //@ts-ignore
     const { header, description } = this.props;
 
     if (!header) return null;
