@@ -8,7 +8,10 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Headline />
+      <section className='main'>
+        //@ts-ignore
+        <Headline header={'Posts'} description={'Clicke the button to render posts'} />
+      </section>
     </div>
   );
 };
