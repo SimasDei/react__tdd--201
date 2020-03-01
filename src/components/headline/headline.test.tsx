@@ -2,9 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Headline from './';
 
+import { IProps } from './headline.types';
 import { findByDataTest } from '../../../utils';
 
-const setup = (props = {}) => {
+const setup = (props: IProps | any = {}) => {
   const component = shallow(<Headline {...props} />);
   return component;
 };

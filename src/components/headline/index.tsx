@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 
+import { IProps } from './headline.types';
 import './headline.styles.scss';
 
-interface IProps {
-  header: string;
-  description: string;
-}
-
-export class Headline extends Component {
+export class Headline extends Component<IProps> {
   render() {
-    //@ts-ignore
     const { header, description } = this.props;
 
     if (!header) return null;
